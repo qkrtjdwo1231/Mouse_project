@@ -1,0 +1,29 @@
+# GRAVITY AI Project Summary for Gemini Model Context
+
+## 1. Project Identity
+- Name: GRAVITY
+- Purpose: AI-driven custom 3D printed mouse configuration platform.
+- Core Engine: Gemini 3 Flash Preview (gemini-3-flash-preview).
+
+## 2. Technical Implementation Details
+### AI Chatbot (User-facing)
+- Response Mode: Real-time streaming (generateContentStream).
+- Image Optimization: Automatic compression (compressImage) to reduce latency.
+- Computer Vision: OpenCV.js integration for detecting reference objects (cards, coins) and calculating px/mm resolution.
+- Data Protocol: Returns parametric design data in a specific JSON block (---JSON_START--- ... ---JSON_END---).
+
+### 3. 3D Preview Engine (Blender Simulation)
+- Technology: Three.js (@react-three/fiber).
+- Aesthetics: 3D printed honeycomb lattice shell, additive manufacturing visualization.
+- Parametric Logic: Dynamic scaling of X, Y, Z axes based on AI-calculated hand/mouse dimensions.
+- Material Sync: Real-time updates for color and texture (Matte/Glossy).
+
+### 4. Model Control Tower (Admin)
+- System Instruction Management: Direct editing of the model's persona and rules.
+- Knowledge Base: Support for Image and Text (.txt) file injection.
+- Conversational Test Console: Full interactive chat mode with image upload for precision tuning.
+
+## 5. Model Role & Guidelines
+- Role: Lead Precision Ergonomics Engineer at GRAVITY.
+- Objective: Analyze hand photos and provide optimized mouse specifications.
+- Output: Professional Korean dialogue + structured JSON design data.
